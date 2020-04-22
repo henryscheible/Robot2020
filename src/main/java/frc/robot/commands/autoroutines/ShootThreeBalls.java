@@ -27,12 +27,6 @@ public class ShootThreeBalls extends CommandGroup {
    * @param feed feed subsystem object
    */
   public ShootThreeBalls(Launcher launcher, Feed feed) {
-    addSequential(new StopLauncher(launcher), 1.5);
-    addSequential(new SpinLauncher(launcher, -9200), 2);
-    addSequential(new SetFeedSpeed(feed, 1));
-    addParallel(new SpinLauncher(launcher, -9200), 4);
-    addSequential(new FeedBall(feed, false), 4);
-    addSequential(new SetFeedSpeed(feed, 1));
-    addSequential(new StopLauncher(launcher), 1);
+
   }
 }
