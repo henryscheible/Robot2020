@@ -15,7 +15,6 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 // import frc.robot.commands.autoroutines.DriveBackwards;
 import frc.robot.commands.autoroutines.DriveBackwardsThenLaunchThreeBalls;
-import frc.robot.commands.autoroutines.LaunchThreeBallsThenPickupTwo;
 import frc.robot.commands.autoroutines.ShootThreeBalls;
 import frc.robot.components.Limelight;
 import frc.robot.components.Talon;
@@ -108,7 +107,7 @@ public class Robot extends TimedRobot {
   @Override
   public void autonomousInit() {
     // m_autonomousCommand = m_chooser.getSelected();
-    m_autonomousCommand = new LaunchThreeBallsThenPickupTwo(launcher, feed, tankDrive, intake);
+    //m_autonomousCommand = new LaunchThreeBallsThenPickupTwo(launcher, feed, tankDrive, intake);
     /*
      * String autoSelected = SmartDashboard.getString("Auto Selector",
      * "Default"); switch(autoSelected) { case "My Auto": autonomousCommand
